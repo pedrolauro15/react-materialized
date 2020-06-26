@@ -4,7 +4,7 @@ export default create({
   base: "dark",
   colorSecondary: "#2574BA",
   appBg: "#111",
-  appContentBg: "#202020",
+  appContentBg: "#1F1D1F",
   appBorderColor: "#2574BA",
 
   textColor: "#FFF",
