@@ -6,10 +6,6 @@ export const TextField = styled.div<InputProps>`
 	margin-bottom: 45px;
 	background: transparent;
 
-	> input {
-		color: ${(props) => (props.elementColor ? props.elementColor : '#333')};
-	}
-
 	> input:focus ~ label,
 	input:valid ~ label {
 		top: -20px;
@@ -62,7 +58,7 @@ export const TextField = styled.div<InputProps>`
 	}
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<InputProps>`
 	font-size: 18px;
 	padding: 10px 10px 10px 5px;
 	display: block;
@@ -70,6 +66,7 @@ export const Input = styled.input`
 	border: none;
 	border-bottom: 1px solid #757575;
 	background-color: transparent;
+	color: ${props => props.elementColor ? props.elementColor : '#000'};
 
 	&:focus {
 		outline: none;

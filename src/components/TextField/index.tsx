@@ -19,7 +19,7 @@ export function TextField({
 }: InputProps) {
 	return (
 		<InputField color={color}>
-			<Input required name="user" />
+			<Input elementColor={elementColor} required name="user" />
 			{highlight && <Highlight className="highlight" />}
 			<Bar className="bar" color={color} />
 			<Label>{label}</Label>
